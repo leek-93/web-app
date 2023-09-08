@@ -6,5 +6,17 @@ app. listen(8080, function(){
 });
 
 app.get('/', function(request, response){
-    response.sendFile(__dirname + '/index.html');
+    response.sendFile(__dirname+'/index.html');
+});
+
+app.post('/', function(request, response){
+    response.send('post request');
+});
+
+app.put('/', function(request, response){
+    response.send('put request');
+});
+
+app.delete('/', function(request, response){
+    response.send('delete request');
 });
