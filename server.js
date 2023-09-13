@@ -24,6 +24,14 @@ app.get('/gallary', function(request, response){
     response.sendFile(__dirname+'/gallary.html');
 });
 
+app.get('/login', function(request, response){
+    response.sendFile(__dirname+'/login.html');
+});
+
+app.get('/signup', function(request, response){
+    response.sendFile(__dirname+'/signup.html');
+});
+
 app.post('/', function(request, response){
     response.send('post request');
 });
